@@ -1,0 +1,58 @@
+.about-title {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}
+
+.developer {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 8px 8px 2px  #ccc;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.grid-languages, .grid-frameworks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+  padding: 1rem;
+  place-items: center;
+
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+}
+
+.row-languajes {
+  background-color: red;
+}
+
+.text-skills {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skills {
+  
+  h2 {
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+.icon-framework {
+  width: 128px;
+}
+
+.description {
+  padding: 0 2rem;
+
+  p {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

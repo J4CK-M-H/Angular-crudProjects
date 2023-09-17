@@ -1,0 +1,58 @@
+<div *ngIf="this.project">
+  <form (ngSubmit)="editProject()">
+
+    <div>
+      <label for="name">Proyecto</label>
+      <input class="field-project" #name="ngModel" type="text" name="name" [(ngModel)]="this.project.name" required />
+      <span class="error-field" *ngIf="name.touched && !name.valid">
+        El nombre del proyecto es obligatorio
+      </span>
+    </div>
+
+    <div>
+      <label for="description">Descripción</label>
+      <textarea class="area-project" type="text" #description="ngModel" name="description"
+        [(ngModel)]="this.project.description" required></textarea>
+      <span class="error-field" *ngIf="description.touched && !description.valid">
+        Descripción del proyecto es obligatorio
+      </span>
+    </div>
+
+    <div>
+      <label for="category">Categoria</label>
+      <input class="field-project" #category="ngModel" type="text" name="category" [(ngModel)]="this.project.category"
+        required />
+      <span class="error-field" *ngIf="category.touched && !category.valid">
+        La categoria del proyecto es obligatorio
+      </span>
+    </div>
+
+    <div>
+      <label for="year">Año de lanzamiento</label>
+      <input class="field-project" type="number" #year="ngModel" name="year" [(ngModel)]="this.project.year" required />
+      <span class="error-field" *ngIf="year.touched && !year.valid">
+        El año del proyecto es obligatorio
+      </span>
+    </div>
+
+    <div>
+      <label for="langs">Lenguajes</label>
+      <input class="field-project" type="text" #langs="ngModel" name="langs" [(ngModel)]="this.project.langs"
+        required />
+      <span class="error-field" *ngIf="langs.touched && !langs.valid">
+        Lenguajes del proyecto es obligatorio
+      </span>
+    </div>
+
+    <div class="poster">
+      <img src="{{ this.url + project.image }}" alt="">
+    </div>
+
+    <div>
+      <input class="field-project" type="file" name="image" (change)="fileChangeEvent($event)">
+    </div>
+
+    <input class="button-project" type="submit" value="Enviar">
+
+  </form>
+</div>

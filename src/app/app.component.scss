@@ -1,0 +1,23 @@
+.container {
+  padding-top: 0.1px;
+}
+
+.general {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 2px 0 25px #ddd,
+              -2px 0 25px #ddd;
+
+  margin-top: 80px;
+  min-height: 100vh;
+  padding: 3rem;
+}
+
+
+.footer__title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
